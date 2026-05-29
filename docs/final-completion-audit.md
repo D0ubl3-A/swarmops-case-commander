@@ -74,9 +74,15 @@ Do not claim these unless new evidence is added:
 
 | Gate | Current status | Evidence needed to close |
 | --- | --- | --- |
-| YouTube upload | Not verified | Public or unlisted YouTube URL accepted by the submission form |
-| UiPath Maestro recording | Not verified | Screenshot or video of Maestro stages, human task, API/evidence handoff |
-| Final Devpost submission | Not verified | Devpost submission URL or confirmation |
+| YouTube upload | Tracked in issue #1 | Public or unlisted YouTube URL accepted by the submission form |
+| UiPath Maestro recording | Tracked in issue #2 | Screenshot or video of Maestro stages, human task, API/evidence handoff |
+| Final Devpost submission | Tracked in issue #3 | Devpost submission URL or confirmation |
+
+Issue links:
+
+- YouTube upload: https://github.com/D0ubl3-A/swarmops-case-commander/issues/1
+- UiPath Maestro proof: https://github.com/D0ubl3-A/swarmops-case-commander/issues/2
+- Final Devpost submission: https://github.com/D0ubl3-A/swarmops-case-commander/issues/3
 
 ## Current Practical Status
 

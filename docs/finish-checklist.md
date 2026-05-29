@@ -44,7 +44,7 @@
 
 ## Needs Account / External Access
 
-- Confirm UiPath Labs / Automation Cloud access.
+- Confirm UiPath Labs / Automation Cloud access. Track in https://github.com/D0ubl3-A/swarmops-case-commander/issues/2
 - Build Maestro Case stages in UiPath.
 - Add human task / approval step in UiPath.
 - Connect UiPath case flow to SwarmOps evidence JSON, or record a clearly labeled local-to-UiPath handoff demo.
@@ -52,8 +52,8 @@
 
 ## Needs Public Publishing
 
-- Upload public embeddable YouTube video if Devpost requires hosted video embed rather than a public MP4 link.
-- Fill Devpost submission.
+- Upload public embeddable YouTube video if Devpost requires hosted video embed rather than a public MP4 link. Track in https://github.com/D0ubl3-A/swarmops-case-commander/issues/1
+- Fill Devpost submission. Track in https://github.com/D0ubl3-A/swarmops-case-commander/issues/3
 
 ## Final No-Fake-Claims Gate
 

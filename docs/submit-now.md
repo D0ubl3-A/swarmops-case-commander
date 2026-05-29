@@ -108,8 +108,9 @@ Fully integrated with UiPath Maestro Case.
 
 ## Final Manual Steps
 
-1. Upload the narrated MP4 to YouTube if the submission form rejects direct MP4 links.
+1. Upload the narrated MP4 to YouTube if the submission form rejects direct MP4 links. Track in https://github.com/D0ubl3-A/swarmops-case-commander/issues/1
 2. Paste the YouTube URL into the video field.
 3. Add the hosted submission page, GitHub repo, release, submission bundle, deck, OpenAPI, and evidence links.
-4. If UiPath Automation Cloud access is available, record Maestro Case stages and human approval before submitting.
-5. If UiPath footage is not available, submit using the safe claim language above.
+4. If UiPath Automation Cloud access is available, record Maestro Case stages and human approval before submitting. Track in https://github.com/D0ubl3-A/swarmops-case-commander/issues/2
+5. Submit the final Devpost form. Track in https://github.com/D0ubl3-A/swarmops-case-commander/issues/3
+6. If UiPath footage is not available, submit using the safe claim language above.

@@ -16,6 +16,9 @@ REQUIRED = [
     "openapi.json",
     "SO-CASE-001-approved-evidence-report.json",
     "Do not claim unless proven with UiPath footage",
+    "https://github.com/D0ubl3-A/swarmops-case-commander/issues/1",
+    "https://github.com/D0ubl3-A/swarmops-case-commander/issues/2",
+    "https://github.com/D0ubl3-A/swarmops-case-commander/issues/3",
 ]
 
 
