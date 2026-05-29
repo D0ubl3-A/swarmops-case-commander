@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SwarmOps Case Commander</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="Case queue">
+        <div class="brand">
+          <div class="brand-mark">SO</div>
+          <div>
+            <h1>SwarmOps</h1>
+            <p>Case Commander</p>
+          </div>
+        </div>
+
+        <section class="queue-panel" aria-label="Active cases">
+          <div class="section-heading">
+            <span>Cases</span>
+            <strong id="caseCount">1</strong>
+          </div>
+          <button class="case-row active" type="button" id="activeCaseButton">
+            <span id="caseId">SO-CASE-001</span>
+            <strong id="caseTitle">Vendor onboarding</strong>
+            <em id="caseStatus">Pending approval</em>
+          </button>
+        </section>
+
+        <section class="metrics" aria-label="Case metrics">
+          <div>
+            <span>Agents</span>
+            <strong id="agentCount">5</strong>
+          </div>
+          <div>
+            <span>Evidence</span>
+            <strong id="evidenceCount">5</strong>
+          </div>
+          <div>
+            <span>Blocked</span>
+            <strong id="blockedCount">1</strong>
+          </div>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <header class="case-header">
+          <div>
+            <p class="eyebrow">UiPath AgentHack Prototype</p>
+            <h2 id="mainTitle">Northstar Components vendor onboarding</h2>
+            <p id="requestText" class="request-text"></p>
+          </div>
+          <div class="header-actions">
+            <button class="secondary" type="button" id="resetButton">Reset</button>
+            <button class="primary" type="button" id="exportButton">Export evidence</button>
+          </div>
+        </header>
+
+        <section class="command-grid">
+          <section class="panel timeline-panel" aria-label="Case stages">
+            <div class="section-heading">
+              <span>Case timeline</span>
+              <strong id="stageSummary">6 stages</strong>
+            </div>
+            <div id="stageList" class="stage-list"></div>
+          </section>
+
+          <section class="panel approval-panel" aria-label="Approval queue">
+            <div class="section-heading">
+              <span>Human approval gate</span>
+              <strong id="approvalState">Pending</strong>
+            </div>
+            <div id="approvalQueue" class="approval-list"></div>
+          </section>
+
+          <section class="panel agent-panel" aria-label="Agent outputs">
+            <div class="section-heading">
+              <span>Bounded agent work</span>
+              <strong>Evidence locked</strong>
+            </div>
+            <div id="agentList" class="agent-list"></div>
+          </section>
+
+          <section class="panel evidence-panel" aria-label="Evidence report">
+            <div class="section-heading">
+              <span>Audit-ready evidence</span>
+              <strong id="reportState">Draft</strong>
+            </div>
+            <pre id="evidenceReport" class="evidence-report"></pre>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

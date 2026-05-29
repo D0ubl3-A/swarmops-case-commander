@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local env and secrets
+.env
+.env.*
+*.key
+*.pem
+credentials*
+secrets/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime logs
+*.log
+
+# Large local captures; keep curated artifacts intentionally
+*.webm
+*.mov
+*.mkv
+

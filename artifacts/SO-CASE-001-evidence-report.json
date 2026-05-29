@@ -1,0 +1,88 @@
+{
+  "case_id": "SO-CASE-001",
+  "title": "Northstar Components vendor onboarding",
+  "final_status": "pending_human_approval",
+  "generated_at": "2026-05-29T01:34:18.887958+00:00",
+  "vendor": {
+    "name": "Northstar Components",
+    "category": "manufacturing supplier",
+    "requested_purchase_amount": 48500,
+    "urgency": "rush",
+    "missing_fields": [
+      "W-9",
+      "bank verification letter",
+      "sanctions screening confirmation"
+    ]
+  },
+  "bounded_agents": [
+    {
+      "agent": "Intake Agent",
+      "evidence_id": "EV-001",
+      "risk": "low",
+      "output": "Request classified as rush vendor onboarding with purchase approval required."
+    },
+    {
+      "agent": "Vendor Data Agent",
+      "evidence_id": "EV-002",
+      "risk": "medium",
+      "output": "Vendor record is incomplete. Three required onboarding artifacts are missing."
+    },
+    {
+      "agent": "Compliance Agent",
+      "evidence_id": "EV-003",
+      "risk": "high",
+      "output": "Purchase exceeds standard low-risk threshold and requires approval before vendor setup."
+    },
+    {
+      "agent": "Approval Summary Agent",
+      "evidence_id": "EV-004",
+      "risk": "medium",
+      "output": "Drafted approval memo with amount, urgency, missing artifacts, and policy gate."
+    },
+    {
+      "agent": "Evidence Agent",
+      "evidence_id": "EV-005",
+      "risk": "low",
+      "output": "Compiled case timeline, risk flags, blocked actions, and approval requirements."
+    }
+  ],
+  "approval_gate": {
+    "id": "APP-001",
+    "label": "Approve vendor setup after missing artifacts are collected",
+    "status": "pending",
+    "risk": "high",
+    "reason": "Vendor setup and purchase handoff are state-changing business actions."
+  },
+  "case_timeline": [
+    {
+      "stage": "intake",
+      "status": "done"
+    },
+    {
+      "stage": "vendor_data_review",
+      "status": "done"
+    },
+    {
+      "stage": "compliance_check",
+      "status": "done"
+    },
+    {
+      "stage": "purchase_approval",
+      "status": "blocked"
+    },
+    {
+      "stage": "fulfillment_handoff",
+      "status": "pending"
+    },
+    {
+      "stage": "final_audit",
+      "status": "pending"
+    }
+  ],
+  "ui_path_mapping": {
+    "maestro_case": "Case stages and state transitions",
+    "human_task": "Approval gate for vendor setup",
+    "robot_or_api_step": "Safe agent outputs and evidence compilation",
+    "final_artifact": "Audit-ready evidence JSON"
+  }
+}

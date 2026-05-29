@@ -1,0 +1,66 @@
+{
+  "case_id": "SO-CASE-001",
+  "title": "Northstar Components vendor onboarding",
+  "request": "Onboard Northstar Components as a new vendor for a $48,500 rush purchase. Validate risk, prepare approval, and create the procurement handoff.",
+  "vendor": {
+    "name": "Northstar Components",
+    "category": "manufacturing supplier",
+    "requested_purchase_amount": 48500,
+    "urgency": "rush",
+    "missing_fields": [
+      "W-9",
+      "bank verification letter",
+      "sanctions screening confirmation"
+    ]
+  },
+  "stages": [
+    "intake",
+    "vendor_data_review",
+    "compliance_check",
+    "purchase_approval",
+    "fulfillment_handoff",
+    "final_audit"
+  ],
+  "agents": [
+    {
+      "name": "Intake Agent",
+      "output": "Request classified as rush vendor onboarding with purchase approval required.",
+      "risk": "low",
+      "evidence_id": "EV-001"
+    },
+    {
+      "name": "Vendor Data Agent",
+      "output": "Vendor record is incomplete. Three required onboarding artifacts are missing.",
+      "risk": "medium",
+      "evidence_id": "EV-002"
+    },
+    {
+      "name": "Compliance Agent",
+      "output": "Purchase exceeds standard low-risk threshold and requires approval before vendor setup.",
+      "risk": "high",
+      "evidence_id": "EV-003"
+    },
+    {
+      "name": "Approval Summary Agent",
+      "output": "Drafted approval memo with amount, urgency, missing artifacts, and policy gate.",
+      "risk": "medium",
+      "evidence_id": "EV-004"
+    },
+    {
+      "name": "Evidence Agent",
+      "output": "Compiled case timeline, risk flags, blocked actions, and approval requirements.",
+      "risk": "low",
+      "evidence_id": "EV-005"
+    }
+  ],
+  "approval_queue": [
+    {
+      "id": "APP-001",
+      "label": "Approve vendor setup after missing artifacts are collected",
+      "status": "pending",
+      "risk": "high",
+      "reason": "Vendor setup and purchase handoff are state-changing business actions."
+    }
+  ],
+  "final_status": "pending_human_approval"
+}

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SwarmOps Case Commander Deck</title>
+    <link rel="stylesheet" href="./slides.css">
+  </head>
+  <body>
+    <main class="deck">
+      <section class="slide title-slide">
+        <p class="eyebrow">UiPath AgentHack - Maestro Case Track</p>
+        <h1>SwarmOps Case Commander</h1>
+        <p class="subtitle">Governed agent swarms for enterprise case work.</p>
+        <div class="title-grid">
+          <span>Bounded agents</span>
+          <span>Human approval</span>
+          <span>Audit-ready evidence</span>
+        </div>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Problem</p>
+        <h2>Enterprises want agent speed without agent chaos.</h2>
+        <p>Procurement, finance, HR, claims, and customer operations all contain exception-heavy workflows where unbounded agents are risky.</p>
+        <div class="three-col">
+          <article><strong>Approvals</strong><span>Risky business actions need human control.</span></article>
+          <article><strong>Evidence</strong><span>Every recommendation needs an audit trail.</span></article>
+          <article><strong>Stages</strong><span>Work has to move through governed case states.</span></article>
+        </div>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Solution</p>
+        <h2>A case command center for bounded agent work.</h2>
+        <ul class="check-list">
+          <li>Turn a messy request into a staged case.</li>
+          <li>Delegate safe analysis to specialist agents.</li>
+          <li>Pause state-changing actions for human approval.</li>
+          <li>Compile every output into evidence JSON.</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Demo Scenario</p>
+        <h2>Vendor onboarding and rush purchase approval.</h2>
+        <blockquote>
+          Onboard Northstar Components as a new vendor for a $48,500 rush purchase. Validate risk, prepare approval, and create the procurement handoff.
+        </blockquote>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Workflow</p>
+        <h2>Six stages from intake to audit.</h2>
+        <ol class="stage-flow">
+          <li>Intake</li>
+          <li>Vendor Data Review</li>
+          <li>Compliance Check</li>
+          <li>Purchase Approval</li>
+          <li>Fulfillment Handoff</li>
+          <li>Final Audit</li>
+        </ol>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Agent Roles</p>
+        <h2>Every agent has one scope and one evidence trail.</h2>
+        <div class="agent-grid">
+          <article><strong>Intake</strong><span>Normalize request</span></article>
+          <article><strong>Vendor Data</strong><span>Check completeness</span></article>
+          <article><strong>Compliance</strong><span>Flag policy risk</span></article>
+          <article><strong>Approval Summary</strong><span>Draft memo</span></article>
+          <article><strong>Evidence</strong><span>Build audit trail</span></article>
+        </div>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Human Gate</p>
+        <h2>High-risk actions stop until a person approves.</h2>
+        <div class="gate-card">
+          <strong>Blocked action</strong>
+          <p>Approve vendor setup after missing artifacts are collected.</p>
+          <code>pending_human_approval -> approved_for_handoff</code>
+        </div>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">UiPath Fit</p>
+        <h2>UiPath owns orchestration. SwarmOps returns evidence.</h2>
+        <table>
+          <thead><tr><th>SwarmOps</th><th>UiPath</th></tr></thead>
+          <tbody>
+            <tr><td>Case stages</td><td>Maestro Case stages</td></tr>
+            <tr><td>Human approval gate</td><td>Human task</td></tr>
+            <tr><td>Safe agent work</td><td>Robot/API step</td></tr>
+            <tr><td>Evidence JSON</td><td>Case artifact</td></tr>
+            <tr><td>Final status</td><td>Case completion state</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Technical Proof</p>
+        <h2>The local prototype is already running.</h2>
+        <ul class="check-list">
+          <li>Runnable dashboard with seeded case data.</li>
+          <li>Five bounded agent outputs.</li>
+          <li>Approval state transition verified.</li>
+          <li>Pending and approved evidence JSON generated.</li>
+          <li>Smoke and interaction checks passing.</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Business Impact</p>
+        <h2>Agent adoption needs governance before scale.</h2>
+        <p>SwarmOps helps operations leaders use AI agents in real workflows without giving up control over approvals, risk, or auditability.</p>
+        <div class="three-col">
+          <article><strong>Procurement</strong><span>Vendor onboarding and purchase approvals.</span></article>
+          <article><strong>Finance</strong><span>Exception review and audit handoffs.</span></article>
+          <article><strong>HR / Claims</strong><span>Document-heavy case processing.</span></article>
+        </div>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Codex Contribution</p>
+        <h2>Agent-assisted build work is documented.</h2>
+        <ul class="check-list">
+          <li>Bounded swarm architecture and governance.</li>
+          <li>Hackathon strategy and target selection.</li>
+          <li>Local prototype and validation scripts.</li>
+          <li>Evidence artifacts and submission package.</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Next Step</p>
+        <h2>Connect the prototype to UiPath Automation Cloud.</h2>
+        <ul class="check-list">
+          <li>Maestro Case stages.</li>
+          <li>Human approval task.</li>
+          <li>Robot/API handoff to SwarmOps evidence JSON.</li>
+          <li>Case artifact attachment.</li>
+          <li>Final demo video under 5 minutes.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
