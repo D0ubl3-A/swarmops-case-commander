@@ -134,6 +134,7 @@ Result:
 swarmops api check passed
 handoff_status=pending_human_approval
 approval_status=approved
+maestro_fields=10
 ```
 
 OpenAPI contract check:
@@ -146,7 +147,37 @@ Result:
 
 ```text
 swarmops openapi check passed
-paths=5
+paths=6
+```
+
+Maestro field map generation:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\generate_maestro_field_map.py
+```
+
+Result:
+
+```text
+C:\Users\aaron\.barz\apps\swarmops_case_commander\docs\maestro-field-map.json
+fields=10
+stages=6
+api_calls=5
+```
+
+Maestro field map check:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\maestro_field_map_check.py
+```
+
+Result:
+
+```text
+swarmops maestro field map check passed
+fields=10
+stages=6
+api_calls=5
 ```
 
 Submission page check:
@@ -185,7 +216,7 @@ Result:
 
 ```text
 swarmops submit packet check passed
-required_items=9
+required_items=14
 ```
 
 Submission bundle check:
@@ -198,7 +229,7 @@ Result:
 
 ```text
 swarmops submission bundle check passed
-files=10
+files=11
 ```
 
 Final completion audit check:
@@ -211,7 +242,7 @@ Result:
 
 ```text
 swarmops final audit check passed
-required_items=9
+required_items=14
 ```
 
 Hosted submission page check:
@@ -221,11 +252,20 @@ https://d0ubl3-a.github.io/swarmops-case-commander/ -> 200
 content includes "SwarmOps Case Commander" -> true
 ```
 
+YouTube upload check:
+
+```text
+https://www.youtube.com/watch?v=C5narcmY6nk
+privacyStatus=unlisted
+embeddable=true
+uploadStatus=uploaded
+```
+
 Versioned release check:
 
 ```text
 https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
-assets: final-completion-audit.md, openapi.json, release-notes-v0.1.0.md, SO-CASE-001-approved-evidence-report.json, submit-now.md, swarmops-case-commander-deck.pdf, swarmops-case-commander-narrated-demo.mp4, swarmops-case-commander-submission-bundle.zip
+assets: final-completion-audit.md, openapi.json, release-notes-v0.1.0.md, SO-CASE-001-approved-evidence-report.json, submit-now.md, swarmops-case-commander-deck.pdf, swarmops-case-commander-narrated-demo.mp4, swarmops-case-commander-submission-bundle.zip, youtube-upload.json
 ```
 
 ## Requirements Covered
@@ -245,6 +285,8 @@ assets: final-completion-audit.md, openapi.json, release-notes-v0.1.0.md, SO-CAS
 | UiPath handoff API contract passes | `prototype/api_check.py` |
 | OpenAPI contract exists | `docs/openapi.json` |
 | OpenAPI contract passes | `prototype/openapi_check.py` |
+| Maestro field map exists | `docs/maestro-field-map.json` |
+| Maestro field map passes drift check | `prototype/maestro_field_map_check.py` |
 | Static submission page exists | `submission/index.html` |
 | Submission page check passes | `prototype/submission_page_check.py` |
 | Pages build workflow exists | `.github/workflows/pages.yml` |
@@ -255,6 +297,7 @@ assets: final-completion-audit.md, openapi.json, release-notes-v0.1.0.md, SO-CAS
 | Submission bundle check passes | `prototype/submission_bundle_check.py` |
 | Final completion audit exists | `docs/final-completion-audit.md` |
 | Final completion audit check passes | `prototype/final_audit_check.py` |
+| YouTube demo upload exists | `https://www.youtube.com/watch?v=C5narcmY6nk` |
 | Hosted submission page is live | `https://d0ubl3-a.github.io/swarmops-case-commander/` returned 200 |
 | Versioned release exists | `https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0` |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |

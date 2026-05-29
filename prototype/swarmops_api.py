@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from generate_evidence import build_report
+from maestro_field_map import build_maestro_field_map
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,6 +88,8 @@ class SwarmOpsHandler(BaseHTTPRequestHandler):
             self.send_json(case)
         elif path == f"/api/cases/{case['case_id']}/handoff":
             self.send_json(uipath_handoff(case))
+        elif path == f"/api/cases/{case['case_id']}/maestro-field-map":
+            self.send_json(build_maestro_field_map(case))
         elif path == f"/api/cases/{case['case_id']}/evidence":
             self.send_json(build_report(case))
         else:

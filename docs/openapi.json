@@ -56,6 +56,23 @@
         }
       }
     },
+    "/api/cases/SO-CASE-001/maestro-field-map": {
+      "get": {
+        "summary": "Get UiPath Maestro field map package",
+        "responses": {
+          "200": {
+            "description": "Machine-readable Maestro Case stages, fields, API calls, human tasks, and acceptance checks",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MaestroFieldMap"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/cases/SO-CASE-001/approval": {
       "post": {
         "summary": "Apply human approval decision",
@@ -165,6 +182,63 @@
           "agent_outputs": {"type": "array", "items": {"type": "object"}},
           "approval_required": {"type": "array", "items": {"type": "object"}},
           "evidence_manifest_url": {"type": "string"}
+        }
+      },
+      "MaestroFieldMap": {
+        "type": "object",
+        "required": ["case_type", "case_id", "source_case_file", "api_base_url", "stages", "case_fields", "api_calls", "human_tasks", "acceptance_checks", "claim_guard"],
+        "properties": {
+          "case_type": {"type": "string"},
+          "case_id": {"type": "string"},
+          "source_case_file": {"type": "string"},
+          "api_base_url": {"type": "string"},
+          "stages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["order", "key", "label", "source"],
+              "properties": {
+                "order": {"type": "integer"},
+                "key": {"type": "string"},
+                "label": {"type": "string"},
+                "source": {"type": "string"}
+              }
+            }
+          },
+          "case_fields": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "type", "required", "value", "source", "uipath_use"],
+              "properties": {
+                "name": {"type": "string"},
+                "type": {"type": "string"},
+                "required": {"type": "boolean"},
+                "value": {},
+                "source": {"type": "string"},
+                "uipath_use": {"type": "string"}
+              }
+            }
+          },
+          "api_calls": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "method", "path", "stage", "purpose", "expected_status"],
+              "properties": {
+                "name": {"type": "string"},
+                "method": {"type": "string"},
+                "path": {"type": "string"},
+                "stage": {"type": "string"},
+                "purpose": {"type": "string"},
+                "request_example": {"type": "object"},
+                "expected_status": {"type": "integer"}
+              }
+            }
+          },
+          "human_tasks": {"type": "array", "items": {"type": "object"}},
+          "acceptance_checks": {"type": "array", "items": {"type": "string"}},
+          "claim_guard": {"type": "string"}
         }
       },
       "ApprovalDecision": {

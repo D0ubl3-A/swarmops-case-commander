@@ -71,6 +71,7 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `docs/architecture.md` - system architecture and trust boundary
 - `docs/uipath-integration-contract.md` - UiPath handoff contract
 - `docs/uipath-maestro-build-guide.md` - UiPath Maestro implementation checklist
+- `docs/maestro-field-map.json` - machine-readable Maestro stages, fields, API calls, and human task map
 - `docs/openapi.json` - machine-readable local API contract
 - `docs/submission-package.md` - Devpost-ready text and required links
 - `docs/devpost-final-draft.md` - copy/paste Devpost final draft
@@ -138,6 +139,13 @@ Verify OpenAPI contract:
 
 ```powershell
 py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\openapi_check.py
+```
+
+Regenerate and verify the Maestro field map:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\generate_maestro_field_map.py
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\maestro_field_map_check.py
 ```
 
 Build and verify submission site:

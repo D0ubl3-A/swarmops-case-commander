@@ -13,6 +13,8 @@
 - API contract check passes.
 - OpenAPI contract exists.
 - UiPath Maestro build guide exists.
+- Machine-readable Maestro field map exists.
+- Maestro field map check passes.
 - Smoke check passes.
 - Interaction check passes.
 - Screenshot proof exists.
@@ -41,6 +43,7 @@
 - Final submit-now packet exists.
 - Local submission bundle zip exists.
 - Final completion audit exists.
+- YouTube demo upload exists and is embeddable.
 
 ## Needs Account / External Access
 
@@ -52,7 +55,6 @@
 
 ## Needs Public Publishing
 
-- Upload public embeddable YouTube video if Devpost requires hosted video embed rather than a public MP4 link. Track in https://github.com/D0ubl3-A/swarmops-case-commander/issues/1
 - Fill Devpost submission. Track in https://github.com/D0ubl3-A/swarmops-case-commander/issues/3
 
 ## Final No-Fake-Claims Gate

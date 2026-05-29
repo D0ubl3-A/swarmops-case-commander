@@ -58,6 +58,12 @@ def main():
         require(handoff["evidence_manifest_url"].endswith("/evidence"), "Evidence URL missing from handoff")
         require(len(handoff["agent_outputs"]) == 5, "Handoff did not include all agent outputs")
 
+        field_map = fetch("/api/cases/SO-CASE-001/maestro-field-map")
+        require(field_map["case_type"] == "SwarmOps Vendor Onboarding", "Maestro case type mismatch")
+        require(len(field_map["stages"]) == 6, "Maestro field map stage count mismatch")
+        require(len(field_map["case_fields"]) >= 10, "Maestro field map missing fields")
+        require("live UiPath Maestro connection" in field_map["claim_guard"], "Maestro field map claim guard missing")
+
         approved = fetch("/api/cases/SO-CASE-001/approval", "POST", {"decision": "approved"})
         require(approved["approval_gate"]["status"] == "approved", "Approval endpoint did not approve gate")
         require(approved["final_status"] == "approved_for_handoff", "Approval endpoint final status mismatch")
@@ -71,6 +77,7 @@ def main():
         print("swarmops api check passed")
         print("handoff_status=pending_human_approval")
         print("approval_status=approved")
+        print(f"maestro_fields={len(field_map['case_fields'])}")
     finally:
         proc.terminate()
         try:

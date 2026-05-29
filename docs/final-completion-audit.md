@@ -22,8 +22,11 @@ This audit distinguishes verified project deliverables from external submission 
 | Local UiPath handoff API | `prototype/swarmops_api.py` |
 | OpenAPI contract | `docs/openapi.json` |
 | UiPath Maestro build guide | `docs/uipath-maestro-build-guide.md` |
+| Maestro field map | `docs/maestro-field-map.json` |
 | Evidence artifacts | `artifacts/SO-CASE-001-evidence-report.json` and `artifacts/SO-CASE-001-approved-evidence-report.json` |
 | Narrated demo artifact | `artifacts/swarmops-case-commander-narrated-demo.mp4` |
+| YouTube demo upload | https://www.youtube.com/watch?v=C5narcmY6nk |
+| YouTube upload proof | `artifacts/youtube-upload.json` |
 | Deck artifact | `artifacts/swarmops-case-commander-deck.pdf` |
 | Submit-now packet | `docs/submit-now.md` |
 | Release notes | `docs/release-notes-v0.1.0.md` |
@@ -38,6 +41,7 @@ py -3 prototype\smoke_check.py
 py -3 prototype\interaction_check.py
 py -3 prototype\api_check.py
 py -3 prototype\openapi_check.py
+py -3 prototype\maestro_field_map_check.py
 py -3 prototype\submission_page_check.py
 py -3 prototype\pages_build_check.py
 py -3 prototype\submit_packet_check.py
@@ -55,6 +59,7 @@ Release `v0.1.0` contains:
 - `swarmops-case-commander-submission-bundle.zip`
 - `submit-now.md`
 - `final-completion-audit.md`
+- `youtube-upload.json`
 
 ## Safe Final Submission Claim
 
@@ -67,23 +72,21 @@ The local SwarmOps prototype, evidence pipeline, handoff API, OpenAPI contract, 
 Do not claim these unless new evidence is added:
 
 - Fully integrated with UiPath Maestro Case.
-- Public YouTube upload completed.
 - Final Devpost form submitted.
 
 ## Remaining External Gates
 
 | Gate | Current status | Evidence needed to close |
 | --- | --- | --- |
-| YouTube upload | Tracked in issue #1 | Public or unlisted YouTube URL accepted by the submission form |
+| YouTube upload | Complete | Public or unlisted YouTube URL accepted by the submission form: https://www.youtube.com/watch?v=C5narcmY6nk |
 | UiPath Maestro recording | Tracked in issue #2 | Screenshot or video of Maestro stages, human task, API/evidence handoff |
 | Final Devpost submission | Tracked in issue #3 | Devpost submission URL or confirmation |
 
 Issue links:
 
-- YouTube upload: https://github.com/D0ubl3-A/swarmops-case-commander/issues/1
 - UiPath Maestro proof: https://github.com/D0ubl3-A/swarmops-case-commander/issues/2
 - Final Devpost submission: https://github.com/D0ubl3-A/swarmops-case-commander/issues/3
 
 ## Current Practical Status
 
-The project package is ready to submit with conservative language. The only remaining work requires external platform actions: YouTube upload if required, UiPath Maestro recording if available, and final Devpost submission.
+The project package is ready to submit with conservative language. The remaining external work is UiPath Maestro recording if available and final Devpost submission.

@@ -11,6 +11,7 @@ REQUIRED_PATHS = [
     "/health",
     "/api/cases/SO-CASE-001",
     "/api/cases/SO-CASE-001/handoff",
+    "/api/cases/SO-CASE-001/maestro-field-map",
     "/api/cases/SO-CASE-001/approval",
     "/api/cases/SO-CASE-001/evidence",
 ]
@@ -32,6 +33,7 @@ def main():
         "/health",
         "/api/cases/",
         "/handoff",
+        "/maestro-field-map",
         "/approval",
         "/evidence",
     ]
@@ -44,6 +46,7 @@ def main():
 
     decision = spec["components"]["schemas"]["ApprovalDecision"]["properties"]["decision"]["enum"]
     require(decision == ["approved", "rejected", "pending"], "Approval enum mismatch")
+    require("MaestroFieldMap" in spec["components"]["schemas"], "MaestroFieldMap schema missing")
 
     print("swarmops openapi check passed")
     print(f"paths={len(REQUIRED_PATHS)}")

@@ -43,6 +43,7 @@ UiPath, AgentHack, Maestro Case, AI agents, enterprise automation, agent governa
 - Hosted submission page: https://d0ubl3-a.github.io/swarmops-case-commander/
 - Versioned release: https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
 - Submission bundle: https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip
+- YouTube demo: https://www.youtube.com/watch?v=C5narcmY6nk
 - Narrated demo MP4: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
 - Deck PDF: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 - OpenAPI contract: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/docs/openapi.json
@@ -51,8 +52,8 @@ UiPath, AgentHack, Maestro Case, AI agents, enterprise automation, agent governa
 
 ## Upload Checklist
 
-1. Upload `artifacts/swarmops-case-commander-narrated-demo.mp4` to YouTube.
-2. Set visibility to public or unlisted if Devpost accepts unlisted embeds.
+1. YouTube upload is complete: https://www.youtube.com/watch?v=C5narcmY6nk
+2. Visibility is unlisted and embeddable.
 3. Paste the YouTube URL into Devpost's video field.
 4. Add the GitHub repo and deck PDF as project links.
 5. Use the honest UiPath language from `docs/devpost-final-draft.md` unless Maestro footage has been recorded.

@@ -1,0 +1,203 @@
+{
+  "case_type": "SwarmOps Vendor Onboarding",
+  "case_id": "SO-CASE-001",
+  "source_case_file": "data/sample-case.json",
+  "api_base_url": "http://127.0.0.1:8791",
+  "stages": [
+    {
+      "order": 1,
+      "key": "intake",
+      "label": "Intake",
+      "source": "data/sample-case.json:stages"
+    },
+    {
+      "order": 2,
+      "key": "vendor_data_review",
+      "label": "Vendor Data Review",
+      "source": "data/sample-case.json:stages"
+    },
+    {
+      "order": 3,
+      "key": "compliance_check",
+      "label": "Compliance Check",
+      "source": "data/sample-case.json:stages"
+    },
+    {
+      "order": 4,
+      "key": "purchase_approval",
+      "label": "Purchase Approval",
+      "source": "data/sample-case.json:stages"
+    },
+    {
+      "order": 5,
+      "key": "fulfillment_handoff",
+      "label": "Fulfillment Handoff",
+      "source": "data/sample-case.json:stages"
+    },
+    {
+      "order": 6,
+      "key": "final_audit",
+      "label": "Final Audit",
+      "source": "data/sample-case.json:stages"
+    }
+  ],
+  "case_fields": [
+    {
+      "name": "case_id",
+      "type": "Text",
+      "required": true,
+      "value": "SO-CASE-001",
+      "source": "GET /api/cases/SO-CASE-001",
+      "uipath_use": "Primary case identifier"
+    },
+    {
+      "name": "vendor_name",
+      "type": "Text",
+      "required": true,
+      "value": "Northstar Components",
+      "source": "GET /api/cases/SO-CASE-001",
+      "uipath_use": "Case title and vendor search key"
+    },
+    {
+      "name": "requested_purchase_amount",
+      "type": "Number",
+      "required": true,
+      "value": 48500,
+      "source": "GET /api/cases/SO-CASE-001",
+      "uipath_use": "Approval threshold and routing input"
+    },
+    {
+      "name": "urgency",
+      "type": "Text",
+      "required": true,
+      "value": "rush",
+      "source": "GET /api/cases/SO-CASE-001",
+      "uipath_use": "Case priority"
+    },
+    {
+      "name": "final_status",
+      "type": "Text",
+      "required": true,
+      "value": "pending_human_approval",
+      "source": "/api/cases/SO-CASE-001/handoff",
+      "uipath_use": "Case state"
+    },
+    {
+      "name": "missing_fields_json",
+      "type": "JSON/Text",
+      "required": true,
+      "value": "[\"W-9\",\"bank verification letter\",\"sanctions screening confirmation\"]",
+      "source": "GET /api/cases/SO-CASE-001",
+      "uipath_use": "Reviewer checklist"
+    },
+    {
+      "name": "risk_flags_json",
+      "type": "JSON/Text",
+      "required": true,
+      "value": "[{\"evidence_id\":\"EV-002\",\"level\":\"medium\",\"reason\":\"Vendor record is incomplete. Three required onboarding artifacts are missing.\"},{\"evidence_id\":\"EV-003\",\"level\":\"high\",\"reason\":\"Purchase exceeds standard low-risk threshold and requires approval before vendor setup.\"},{\"evidence_id\":\"EV-004\",\"level\":\"medium\",\"reason\":\"Drafted approval memo with amount, urgency, missing artifacts, and policy gate.\"}]",
+      "source": "/api/cases/SO-CASE-001/handoff",
+      "uipath_use": "Compliance and approval routing"
+    },
+    {
+      "name": "agent_outputs_json",
+      "type": "JSON/Text",
+      "required": true,
+      "value": "[{\"agent\":\"Intake Agent\",\"evidence_id\":\"EV-001\",\"output\":\"Request classified as rush vendor onboarding with purchase approval required.\",\"risk\":\"low\"},{\"agent\":\"Vendor Data Agent\",\"evidence_id\":\"EV-002\",\"output\":\"Vendor record is incomplete. Three required onboarding artifacts are missing.\",\"risk\":\"medium\"},{\"agent\":\"Compliance Agent\",\"evidence_id\":\"EV-003\",\"output\":\"Purchase exceeds standard low-risk threshold and requires approval before vendor setup.\",\"risk\":\"high\"},{\"agent\":\"Approval Summary Agent\",\"evidence_id\":\"EV-004\",\"output\":\"Drafted approval memo with amount, urgency, missing artifacts, and policy gate.\",\"risk\":\"medium\"},{\"agent\":\"Evidence Agent\",\"evidence_id\":\"EV-005\",\"output\":\"Compiled case timeline, risk flags, blocked actions, and approval requirements.\",\"risk\":\"low\"}]",
+      "source": "/api/cases/SO-CASE-001/handoff",
+      "uipath_use": "Agent work summary"
+    },
+    {
+      "name": "approval_required_json",
+      "type": "JSON/Text",
+      "required": true,
+      "value": "{\"id\":\"APP-001\",\"label\":\"Approve vendor setup after missing artifacts are collected\",\"reason\":\"Vendor setup and purchase handoff are state-changing business actions.\",\"risk\":\"high\",\"status\":\"pending\"}",
+      "source": "/api/cases/SO-CASE-001/handoff",
+      "uipath_use": "Human task payload"
+    },
+    {
+      "name": "evidence_manifest_url",
+      "type": "Text",
+      "required": true,
+      "value": "/api/cases/SO-CASE-001/evidence",
+      "source": "/api/cases/SO-CASE-001/handoff",
+      "uipath_use": "Final audit artifact location"
+    }
+  ],
+  "api_calls": [
+    {
+      "name": "health_check",
+      "method": "GET",
+      "path": "/health",
+      "stage": "intake",
+      "purpose": "Confirm the SwarmOps handoff API is reachable before case creation.",
+      "expected_status": 200
+    },
+    {
+      "name": "load_case",
+      "method": "GET",
+      "path": "/api/cases/SO-CASE-001",
+      "stage": "intake",
+      "purpose": "Load seeded vendor, request, stages, agents, and pending approval state.",
+      "expected_status": 200
+    },
+    {
+      "name": "load_handoff",
+      "method": "GET",
+      "path": "/api/cases/SO-CASE-001/handoff",
+      "stage": "vendor_data_review",
+      "purpose": "Populate risk, agent output, and approval fields in Maestro Case.",
+      "expected_status": 200
+    },
+    {
+      "name": "record_human_decision",
+      "method": "POST",
+      "path": "/api/cases/SO-CASE-001/approval",
+      "stage": "purchase_approval",
+      "purpose": "Record approved, rejected, or pending reviewer decision.",
+      "request_example": {
+        "decision": "approved"
+      },
+      "expected_status": 200
+    },
+    {
+      "name": "load_evidence",
+      "method": "GET",
+      "path": "/api/cases/SO-CASE-001/evidence",
+      "stage": "final_audit",
+      "purpose": "Attach or display the audit-ready evidence report.",
+      "expected_status": 200
+    }
+  ],
+  "human_tasks": [
+    {
+      "id": "APP-001",
+      "stage": "purchase_approval",
+      "label": "Approve vendor setup after missing artifacts are collected",
+      "status": "pending",
+      "risk": "high",
+      "reviewer_instruction": "Vendor setup and purchase handoff are state-changing business actions.",
+      "blocked_actions": [
+        "approve vendor record",
+        "accept compliance risk",
+        "create purchase order",
+        "send external vendor email",
+        "finalize case"
+      ],
+      "allowed_automation": [
+        "parse request",
+        "classify urgency",
+        "identify missing fields",
+        "draft approval memo",
+        "compile audit trail"
+      ]
+    }
+  ],
+  "acceptance_checks": [
+    "Six Maestro stages are visible in order.",
+    "Case fields match data/sample-case.json and the handoff endpoint.",
+    "Human approval task uses the APP-001 label.",
+    "Approval callback returns final_status approved_for_handoff for an approved decision.",
+    "Evidence JSON is attached, displayed, or linked in Final Audit."
+  ],
+  "claim_guard": "This is a verified local handoff package. Do not claim a live UiPath Maestro connection until Automation Cloud footage exists."
+}

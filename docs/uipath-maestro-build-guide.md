@@ -22,6 +22,19 @@ OpenAPI contract:
 C:\Users\aaron\.barz\apps\swarmops_case_commander\docs\openapi.json
 ```
 
+Machine-readable Maestro field map:
+
+```text
+C:\Users\aaron\.barz\apps\swarmops_case_commander\docs\maestro-field-map.json
+GET http://127.0.0.1:8791/api/cases/SO-CASE-001/maestro-field-map
+```
+
+Verify the field map before configuring Maestro:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\maestro_field_map_check.py
+```
+
 ## Maestro Case Shape
 
 Create one case type:
@@ -70,13 +83,19 @@ GET http://127.0.0.1:8791/api/cases/SO-CASE-001/handoff
 
 3. Store `risk_flags`, `agent_outputs`, and `approval_required` on the case.
 
-4. In Human Approval, create a human task using this label:
+4. Optional setup aid: fetch the field map and copy the listed stages, case fields, API calls, and human task into the Maestro case configuration.
+
+```text
+GET http://127.0.0.1:8791/api/cases/SO-CASE-001/maestro-field-map
+```
+
+5. In Human Approval, create a human task using this label:
 
 ```text
 Approve vendor setup after missing artifacts are collected
 ```
 
-5. When the reviewer approves, call:
+6. When the reviewer approves, call:
 
 ```text
 POST http://127.0.0.1:8791/api/cases/SO-CASE-001/approval
@@ -85,9 +104,9 @@ Content-Type: application/json
 {"decision":"approved"}
 ```
 
-6. Store the returned evidence report as the final case artifact.
+7. Store the returned evidence report as the final case artifact.
 
-7. In Final Audit, attach or display:
+8. In Final Audit, attach or display:
 
 ```text
 GET http://127.0.0.1:8791/api/cases/SO-CASE-001/evidence

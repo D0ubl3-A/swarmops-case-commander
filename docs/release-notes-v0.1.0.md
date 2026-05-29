@@ -16,6 +16,7 @@ This release packages the verified local prototype and submission assets for UiP
 - Hosted GitHub Pages submission page.
 - Standalone submit-now packet.
 - Standalone final completion audit.
+- YouTube upload proof JSON.
 
 ## Public Links
 
@@ -28,6 +29,7 @@ This release packages the verified local prototype and submission assets for UiP
 - Submission bundle zip: https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip
 - Submit-now packet: https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/submit-now.md
 - Final completion audit: https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/final-completion-audit.md
+- YouTube upload proof JSON: https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/youtube-upload.json
 
 ## Verification Commands
 
