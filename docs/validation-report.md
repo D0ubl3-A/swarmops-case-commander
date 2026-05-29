@@ -136,6 +136,19 @@ handoff_status=pending_human_approval
 approval_status=approved
 ```
 
+OpenAPI contract check:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\openapi_check.py
+```
+
+Result:
+
+```text
+swarmops openapi check passed
+paths=5
+```
+
 ## Requirements Covered
 
 | Requirement | Evidence |
@@ -151,6 +164,8 @@ approval_status=approved
 | Human approval state transition is implemented | `prototype/interaction_check.py` and approved evidence artifact |
 | UiPath handoff API exists | `prototype/swarmops_api.py` |
 | UiPath handoff API contract passes | `prototype/api_check.py` |
+| OpenAPI contract exists | `docs/openapi.json` |
+| OpenAPI contract passes | `prototype/openapi_check.py` |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 | Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |

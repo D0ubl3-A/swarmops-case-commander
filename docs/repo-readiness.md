@@ -27,9 +27,12 @@ swarmops-case-commander
 - `prototype/generate_evidence.py`
 - `prototype/swarmops_api.py`
 - `prototype/api_check.py`
+- `prototype/openapi_check.py`
 - `data/sample-case.json`
 - `docs/architecture.md`
 - `docs/uipath-integration-contract.md`
+- `docs/uipath-maestro-build-guide.md`
+- `docs/openapi.json`
 - `docs/submission-package.md`
 - `docs/devpost-final-draft.md`
 - `docs/validation-report.md`
@@ -72,6 +75,7 @@ py -3 prototype\smoke_check.py
 py -3 prototype\interaction_check.py
 py -3 prototype\generate_evidence.py
 py -3 prototype\api_check.py
+py -3 prototype\openapi_check.py
 ```
 
 ## Do Not Commit

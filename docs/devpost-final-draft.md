@@ -72,12 +72,13 @@ The main challenge was keeping the demo honest while still making it compelling.
 - Presentation deck PDF.
 - Narrated demo video artifact.
 - UiPath Maestro Case integration contract.
+- OpenAPI handoff contract and Maestro build guide.
 
 ## What Is Next
 
 1. Build the Maestro Case stages in UiPath Automation Cloud.
 2. Add the human approval task in UiPath.
-3. Connect the SwarmOps evidence JSON as a case artifact.
+3. Connect the SwarmOps handoff API and evidence JSON as a case artifact.
 4. Record the public YouTube demo with UiPath proof and the existing local prototype proof.
 5. Submit the final Devpost project with the GitHub repo, video, and deck.
 

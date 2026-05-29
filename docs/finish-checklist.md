@@ -11,6 +11,8 @@
 - Approved evidence report can be generated.
 - Local UiPath handoff API exists.
 - API contract check passes.
+- OpenAPI contract exists.
+- UiPath Maestro build guide exists.
 - Smoke check passes.
 - Interaction check passes.
 - Screenshot proof exists.

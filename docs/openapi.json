@@ -1,0 +1,194 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "SwarmOps Case Commander API",
+    "version": "1.0.0",
+    "description": "Local UiPath Maestro Case handoff API for the SwarmOps Case Commander prototype."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8791",
+      "description": "Local prototype API"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Service readiness check",
+        "responses": {
+          "200": {
+            "description": "Service is ready"
+          }
+        }
+      }
+    },
+    "/api/cases/SO-CASE-001": {
+      "get": {
+        "summary": "Get seeded case data",
+        "responses": {
+          "200": {
+            "description": "Seeded vendor onboarding case",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Case"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/cases/SO-CASE-001/handoff": {
+      "get": {
+        "summary": "Get UiPath-ready handoff payload",
+        "responses": {
+          "200": {
+            "description": "Handoff payload with risk flags, agent outputs, approval requirements, and evidence URL",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Handoff"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/cases/SO-CASE-001/approval": {
+      "post": {
+        "summary": "Apply human approval decision",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApprovalDecision"
+              },
+              "examples": {
+                "approved": {
+                  "value": {
+                    "decision": "approved"
+                  }
+                },
+                "rejected": {
+                  "value": {
+                    "decision": "rejected"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated evidence report",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvidenceReport"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid decision"
+          }
+        }
+      }
+    },
+    "/api/cases/SO-CASE-001/evidence": {
+      "get": {
+        "summary": "Get audit-ready evidence report",
+        "responses": {
+          "200": {
+            "description": "Evidence report for case artifact attachment",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvidenceReport"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Case": {
+        "type": "object",
+        "required": ["case_id", "title", "request", "vendor", "stages", "agents", "approval_queue", "final_status"],
+        "properties": {
+          "case_id": {"type": "string"},
+          "title": {"type": "string"},
+          "request": {"type": "string"},
+          "vendor": {"type": "object"},
+          "stages": {"type": "array", "items": {"type": "string"}},
+          "agents": {"type": "array", "items": {"$ref": "#/components/schemas/AgentOutput"}},
+          "approval_queue": {"type": "array", "items": {"$ref": "#/components/schemas/ApprovalGate"}},
+          "final_status": {"type": "string"}
+        }
+      },
+      "AgentOutput": {
+        "type": "object",
+        "required": ["name", "output", "risk", "evidence_id"],
+        "properties": {
+          "name": {"type": "string"},
+          "agent": {"type": "string"},
+          "output": {"type": "string"},
+          "risk": {"type": "string", "enum": ["low", "medium", "high"]},
+          "evidence_id": {"type": "string"}
+        }
+      },
+      "ApprovalGate": {
+        "type": "object",
+        "required": ["id", "label", "status", "risk"],
+        "properties": {
+          "id": {"type": "string"},
+          "label": {"type": "string"},
+          "status": {"type": "string", "enum": ["pending", "approved", "rejected"]},
+          "risk": {"type": "string", "enum": ["low", "medium", "high"]},
+          "reason": {"type": "string"}
+        }
+      },
+      "Handoff": {
+        "type": "object",
+        "required": ["case_id", "status", "stage", "risk_flags", "agent_outputs", "approval_required", "evidence_manifest_url"],
+        "properties": {
+          "case_id": {"type": "string"},
+          "status": {"type": "string"},
+          "stage": {"type": "string"},
+          "risk_flags": {"type": "array", "items": {"type": "object"}},
+          "agent_outputs": {"type": "array", "items": {"type": "object"}},
+          "approval_required": {"type": "array", "items": {"type": "object"}},
+          "evidence_manifest_url": {"type": "string"}
+        }
+      },
+      "ApprovalDecision": {
+        "type": "object",
+        "required": ["decision"],
+        "properties": {
+          "decision": {"type": "string", "enum": ["approved", "rejected", "pending"]}
+        }
+      },
+      "EvidenceReport": {
+        "type": "object",
+        "required": ["case_id", "title", "final_status", "generated_at", "vendor", "bounded_agents", "approval_gate", "case_timeline", "ui_path_mapping"],
+        "properties": {
+          "case_id": {"type": "string"},
+          "title": {"type": "string"},
+          "final_status": {"type": "string"},
+          "generated_at": {"type": "string"},
+          "vendor": {"type": "object"},
+          "bounded_agents": {"type": "array", "items": {"type": "object"}},
+          "approval_gate": {"$ref": "#/components/schemas/ApprovalGate"},
+          "case_timeline": {"type": "array", "items": {"type": "object"}},
+          "ui_path_mapping": {"type": "object"}
+        }
+      }
+    }
+  }
+}

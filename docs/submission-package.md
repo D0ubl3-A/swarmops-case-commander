@@ -35,6 +35,7 @@ Current state: local prototype is implemented and verified. UiPath Automation Cl
 - HTML/CSS/JavaScript local prototype
 - Python smoke checker
 - UiPath Maestro Case integration plan
+- Local UiPath handoff API with OpenAPI contract
 - Codex-assisted agent-swarm planning and implementation
 
 ## Demo Video Requirements

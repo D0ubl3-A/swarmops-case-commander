@@ -58,6 +58,8 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `docs/demo-script.md` - video/story script
 - `docs/architecture.md` - system architecture and trust boundary
 - `docs/uipath-integration-contract.md` - UiPath handoff contract
+- `docs/uipath-maestro-build-guide.md` - UiPath Maestro implementation checklist
+- `docs/openapi.json` - machine-readable local API contract
 - `docs/submission-package.md` - Devpost-ready text and required links
 - `docs/devpost-final-draft.md` - copy/paste Devpost final draft
 - `docs/validation-report.md` - current verification evidence
@@ -113,6 +115,12 @@ Verify API contract:
 
 ```powershell
 py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\api_check.py
+```
+
+Verify OpenAPI contract:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\openapi_check.py
 ```
 
 Verified screenshot:
