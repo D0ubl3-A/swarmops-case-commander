@@ -13,6 +13,9 @@ The demo shows a vendor onboarding and rush purchase approval flow where bounded
 Public repo:
 https://github.com/D0ubl3-A/swarmops-case-commander
 
+Hosted submission page:
+https://d0ubl3-a.github.io/swarmops-case-commander/
+
 Deck:
 https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 
@@ -31,8 +34,7 @@ UiPath, AgentHack, Maestro Case, AI agents, enterprise automation, agent governa
 ## Devpost Link Set
 
 - Code: https://github.com/D0ubl3-A/swarmops-case-commander
-- Submission page: `submission/index.html` in repo
-- GitHub Pages candidate: enable Pages from GitHub Actions, then use the generated page URL
+- Hosted submission page: https://d0ubl3-a.github.io/swarmops-case-commander/
 - Narrated demo MP4: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
 - Deck PDF: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 - OpenAPI contract: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/docs/openapi.json

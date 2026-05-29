@@ -89,7 +89,13 @@ py -3 prototype\pages_build_check.py
 
 ## GitHub Pages
 
-The repo includes `.github/workflows/pages.yml`, which builds `dist/submission-site` from the curated submission page and artifacts. Enable GitHub Pages with GitHub Actions as the source, then run the workflow or push to `main`.
+GitHub Pages is enabled with GitHub Actions as the source. The hosted submission page is:
+
+```text
+https://d0ubl3-a.github.io/swarmops-case-commander/
+```
+
+The repo includes `.github/workflows/pages.yml`, which builds `dist/submission-site` from the curated submission page and artifacts.
 
 ## Do Not Commit
 

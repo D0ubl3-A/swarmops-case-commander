@@ -8,6 +8,12 @@ Public repository:
 https://github.com/D0ubl3-A/swarmops-case-commander
 ```
 
+Hosted submission page:
+
+```text
+https://d0ubl3-a.github.io/swarmops-case-commander/
+```
+
 ## One-Liner
 
 A UiPath-governed case command center that turns messy vendor onboarding and purchase approval requests into staged agent work, human approval gates, and audit-ready evidence.
@@ -163,6 +169,7 @@ C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-comman
 Public asset links:
 
 ```text
+https://d0ubl3-a.github.io/swarmops-case-commander/
 https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
 https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/SO-CASE-001-approved-evidence-report.json

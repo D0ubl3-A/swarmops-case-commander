@@ -175,6 +175,13 @@ swarmops pages build check passed
 files=8
 ```
 
+Hosted submission page check:
+
+```text
+https://d0ubl3-a.github.io/swarmops-case-commander/ -> 200
+content includes "SwarmOps Case Commander" -> true
+```
+
 ## Requirements Covered
 
 | Requirement | Evidence |
@@ -196,6 +203,7 @@ files=8
 | Submission page check passes | `prototype/submission_page_check.py` |
 | Pages build workflow exists | `.github/workflows/pages.yml` |
 | Pages build check passes | `prototype/pages_build_check.py` |
+| Hosted submission page is live | `https://d0ubl3-a.github.io/swarmops-case-commander/` returned 200 |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 | Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |
