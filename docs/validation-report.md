@@ -60,7 +60,7 @@ Public GitHub repo verification:
 https://github.com/D0ubl3-A/swarmops-case-commander
 visibility: public
 default_branch: main
-latest_commit: 24fe1b6 Build SwarmOps Case Commander prototype
+latest_commit: f221614 Add SwarmOps demo video package
 ```
 
 Local proof demo video:
