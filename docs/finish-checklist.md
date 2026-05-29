@@ -37,6 +37,7 @@
 - GitHub Pages deployment workflow exists.
 - Submission site build check passes.
 - Hosted GitHub Pages submission page is live.
+- Versioned GitHub release exists with key submission assets.
 
 ## Needs Account / External Access
 

@@ -182,6 +182,13 @@ https://d0ubl3-a.github.io/swarmops-case-commander/ -> 200
 content includes "SwarmOps Case Commander" -> true
 ```
 
+Versioned release check:
+
+```text
+https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
+assets: openapi.json, SO-CASE-001-approved-evidence-report.json, swarmops-case-commander-deck.pdf, swarmops-case-commander-narrated-demo.mp4
+```
+
 ## Requirements Covered
 
 | Requirement | Evidence |
@@ -204,6 +211,7 @@ content includes "SwarmOps Case Commander" -> true
 | Pages build workflow exists | `.github/workflows/pages.yml` |
 | Pages build check passes | `prototype/pages_build_check.py` |
 | Hosted submission page is live | `https://d0ubl3-a.github.io/swarmops-case-commander/` returned 200 |
+| Versioned release exists | `https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0` |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 | Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |

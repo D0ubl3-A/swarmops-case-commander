@@ -12,6 +12,7 @@ Governed agent swarms for enterprise case work: fast automation, human approval,
 
 - Code: https://github.com/D0ubl3-A/swarmops-case-commander
 - Hosted submission page: https://d0ubl3-a.github.io/swarmops-case-commander/
+- Versioned release: https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
 - Narrated demo video file: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
 - Presentation deck PDF: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 - Approved evidence JSON: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/SO-CASE-001-approved-evidence-report.json

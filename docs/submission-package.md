@@ -54,6 +54,7 @@ Current state: local prototype is implemented and verified. UiPath Automation Cl
 
 - Public GitHub repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - Hosted submission page: https://d0ubl3-a.github.io/swarmops-case-commander/
+- Versioned release: https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
 - Local proof demo video: `C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-demo.mp4`
 - Narrated upload candidate: `C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-narrated-demo.mp4`
 - Public narrated video file: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
