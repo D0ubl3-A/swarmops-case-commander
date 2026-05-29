@@ -149,6 +149,19 @@ swarmops openapi check passed
 paths=5
 ```
 
+Submission page check:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\submission_page_check.py
+```
+
+Result:
+
+```text
+swarmops submission page check passed
+links=5
+```
+
 ## Requirements Covered
 
 | Requirement | Evidence |
@@ -166,6 +179,8 @@ paths=5
 | UiPath handoff API contract passes | `prototype/api_check.py` |
 | OpenAPI contract exists | `docs/openapi.json` |
 | OpenAPI contract passes | `prototype/openapi_check.py` |
+| Static submission page exists | `submission/index.html` |
+| Submission page check passes | `prototype/submission_page_check.py` |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 | Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |

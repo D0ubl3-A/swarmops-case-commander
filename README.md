@@ -67,10 +67,12 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `docs/repo-readiness.md` - public repository checklist
 - `docs/finish-checklist.md` - remaining work tracker
 - `docs/video-shot-list.md` - demo video shot plan
+- `docs/youtube-devpost-metadata.md` - upload metadata and final link set
 - `data/sample-case.json` - seeded demo input and expected outputs
 - `prototype/` - runnable local prototype
 - `prototype/swarmops_api.py` - local UiPath handoff API
 - `prototype/api_check.py` - API contract verifier
+- `submission/` - static judge-facing submission page
 - `LICENSE` - MIT license
 
 ## Run Local Prototype

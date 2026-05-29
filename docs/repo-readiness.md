@@ -28,6 +28,7 @@ swarmops-case-commander
 - `prototype/swarmops_api.py`
 - `prototype/api_check.py`
 - `prototype/openapi_check.py`
+- `prototype/submission_page_check.py`
 - `data/sample-case.json`
 - `docs/architecture.md`
 - `docs/uipath-integration-contract.md`
@@ -37,6 +38,9 @@ swarmops-case-commander
 - `docs/devpost-final-draft.md`
 - `docs/validation-report.md`
 - `docs/deck-outline.md`
+- `docs/youtube-devpost-metadata.md`
+- `submission/index.html`
+- `submission/submission.css`
 - `deck/index.html`
 - `deck/slides.css`
 - `artifacts/swarmops-case-commander-deck.pdf`
@@ -76,6 +80,7 @@ py -3 prototype\interaction_check.py
 py -3 prototype\generate_evidence.py
 py -3 prototype\api_check.py
 py -3 prototype\openapi_check.py
+py -3 prototype\submission_page_check.py
 ```
 
 ## Do Not Commit

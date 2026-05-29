@@ -32,6 +32,8 @@
 - Public GitHub-hosted narrated demo file exists.
 - Public GitHub-hosted deck PDF exists.
 - Devpost final draft exists.
+- Static judge-facing submission page exists.
+- YouTube and Devpost metadata pack exists.
 
 ## Needs Account / External Access
 
