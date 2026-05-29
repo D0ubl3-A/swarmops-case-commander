@@ -22,6 +22,8 @@
 - PDF presentation deck exists.
 - Repo readiness doc exists.
 - Public GitHub repo exists.
+- Demo video shot list exists.
+- Local proof demo video exists.
 
 ## Needs Account / External Access
 
@@ -33,7 +35,7 @@
 
 ## Needs Public Publishing
 
-- Record under-five-minute demo video.
+- Record narrated under-five-minute public demo video.
 - Upload public embeddable YouTube video.
 - Publish presentation deck link.
 - Add public deck link.

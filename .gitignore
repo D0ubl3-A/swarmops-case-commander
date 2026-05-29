@@ -24,4 +24,4 @@ Thumbs.db
 *.webm
 *.mov
 *.mkv
-
+artifacts/video_frames/

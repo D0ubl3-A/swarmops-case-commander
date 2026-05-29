@@ -63,6 +63,7 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `docs/deck-outline.md` - presentation deck outline
 - `docs/repo-readiness.md` - public repository checklist
 - `docs/finish-checklist.md` - remaining work tracker
+- `docs/video-shot-list.md` - demo video shot plan
 - `data/sample-case.json` - seeded demo input and expected outputs
 - `prototype/` - runnable local prototype
 - `LICENSE` - MIT license
@@ -118,4 +119,10 @@ Presentation deck:
 http://127.0.0.1:8788/deck/index.html
 C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-deck.pdf
 C:\Users\aaron\.barz\artifacts\swarmops-deck-screenshot.png
+```
+
+Generated local demo video:
+
+```text
+C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-demo.mp4
 ```

@@ -63,6 +63,18 @@ default_branch: main
 latest_commit: 24fe1b6 Build SwarmOps Case Commander prototype
 ```
 
+Local proof demo video:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\make_demo_video.py
+```
+
+Observed output:
+
+```text
+C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-demo.mp4
+```
+
 Evidence artifact generation:
 
 ```powershell
@@ -105,10 +117,10 @@ final_status=approved_for_handoff
 | Human approval state transition is implemented | `prototype/interaction_check.py` and approved evidence artifact |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
+| Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |
 
 ## Remaining Validation Needed
 
-- Public GitHub repo check.
 - UiPath Maestro Case flow proof.
-- Public demo video check.
+- Public narrated demo video check.
 - Deck link check.
