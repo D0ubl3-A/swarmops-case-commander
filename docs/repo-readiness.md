@@ -34,6 +34,7 @@ swarmops-case-commander
 - `prototype/submit_packet_check.py`
 - `prototype/build_submission_bundle.py`
 - `prototype/submission_bundle_check.py`
+- `prototype/final_audit_check.py`
 - `data/sample-case.json`
 - `docs/architecture.md`
 - `docs/uipath-integration-contract.md`
@@ -43,6 +44,7 @@ swarmops-case-commander
 - `docs/devpost-final-draft.md`
 - `docs/submit-now.md`
 - `docs/validation-report.md`
+- `docs/final-completion-audit.md`
 - `docs/deck-outline.md`
 - `docs/youtube-devpost-metadata.md`
 - `submission/index.html`
@@ -91,6 +93,7 @@ py -3 prototype\submission_page_check.py
 py -3 prototype\pages_build_check.py
 py -3 prototype\submit_packet_check.py
 py -3 prototype\submission_bundle_check.py
+py -3 prototype\final_audit_check.py
 ```
 
 ## GitHub Pages

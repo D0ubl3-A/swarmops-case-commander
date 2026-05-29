@@ -40,6 +40,7 @@
 - Versioned GitHub release exists with key submission assets.
 - Final submit-now packet exists.
 - Local submission bundle zip exists.
+- Final completion audit exists.
 
 ## Needs Account / External Access
 

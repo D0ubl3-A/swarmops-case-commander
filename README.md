@@ -76,6 +76,7 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `docs/devpost-final-draft.md` - copy/paste Devpost final draft
 - `docs/submit-now.md` - final field-by-field submission packet
 - `docs/validation-report.md` - current verification evidence
+- `docs/final-completion-audit.md` - final verified status and remaining external gates
 - `docs/deck-outline.md` - presentation deck outline
 - `docs/repo-readiness.md` - public repository checklist
 - `docs/finish-checklist.md` - remaining work tracker
@@ -155,6 +156,12 @@ Build and verify submission bundle:
 
 ```powershell
 py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\submission_bundle_check.py
+```
+
+Verify final completion audit:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\final_audit_check.py
 ```
 
 Verified screenshot:
