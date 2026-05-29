@@ -11,6 +11,8 @@ REQUIRED_TEXT = [
     "https://d0ubl3-a.github.io/swarmops-case-commander/",
     "https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0",
     "swarmops-case-commander-submission-bundle.zip",
+    "https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/submit-now.md",
+    "https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/final-completion-audit.md",
     "Fully integrated with UiPath Maestro Case",
     "Final Devpost form submitted",
     "ready to submit with conservative language",

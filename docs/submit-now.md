@@ -40,6 +40,12 @@ Submission bundle:
 https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip
 ```
 
+Final completion audit:
+
+```text
+https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/final-completion-audit.md
+```
+
 Demo video:
 
 ```text
@@ -104,6 +110,6 @@ Fully integrated with UiPath Maestro Case.
 
 1. Upload the narrated MP4 to YouTube if the submission form rejects direct MP4 links.
 2. Paste the YouTube URL into the video field.
-3. Add the hosted submission page, GitHub repo, release, deck, OpenAPI, and evidence links.
+3. Add the hosted submission page, GitHub repo, release, submission bundle, deck, OpenAPI, and evidence links.
 4. If UiPath Automation Cloud access is available, record Maestro Case stages and human approval before submitting.
 5. If UiPath footage is not available, submit using the safe claim language above.

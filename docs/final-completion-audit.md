@@ -16,6 +16,8 @@ This audit distinguishes verified project deliverables from external submission 
 | Hosted submission page | https://d0ubl3-a.github.io/swarmops-case-commander/ |
 | Versioned release | https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0 |
 | Downloadable submission bundle | https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip |
+| Standalone submit-now packet | https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/submit-now.md |
+| Standalone final audit | https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/final-completion-audit.md |
 | Runnable local prototype | `prototype/index.html` and `data/sample-case.json` |
 | Local UiPath handoff API | `prototype/swarmops_api.py` |
 | OpenAPI contract | `docs/openapi.json` |
@@ -51,6 +53,8 @@ Release `v0.1.0` contains:
 - `swarmops-case-commander-deck.pdf`
 - `swarmops-case-commander-narrated-demo.mp4`
 - `swarmops-case-commander-submission-bundle.zip`
+- `submit-now.md`
+- `final-completion-audit.md`
 
 ## Safe Final Submission Claim
 

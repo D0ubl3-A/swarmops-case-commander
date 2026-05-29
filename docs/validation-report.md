@@ -225,7 +225,7 @@ Versioned release check:
 
 ```text
 https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
-assets: openapi.json, SO-CASE-001-approved-evidence-report.json, swarmops-case-commander-deck.pdf, swarmops-case-commander-narrated-demo.mp4, swarmops-case-commander-submission-bundle.zip
+assets: final-completion-audit.md, openapi.json, release-notes-v0.1.0.md, SO-CASE-001-approved-evidence-report.json, submit-now.md, swarmops-case-commander-deck.pdf, swarmops-case-commander-narrated-demo.mp4, swarmops-case-commander-submission-bundle.zip
 ```
 
 ## Requirements Covered

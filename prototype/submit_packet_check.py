@@ -10,6 +10,7 @@ REQUIRED = [
     "https://github.com/D0ubl3-A/swarmops-case-commander",
     "https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0",
     "https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip",
+    "https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/final-completion-audit.md",
     "swarmops-case-commander-narrated-demo.mp4",
     "swarmops-case-commander-deck.pdf",
     "openapi.json",
