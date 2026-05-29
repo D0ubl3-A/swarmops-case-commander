@@ -59,6 +59,7 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `docs/architecture.md` - system architecture and trust boundary
 - `docs/uipath-integration-contract.md` - UiPath handoff contract
 - `docs/submission-package.md` - Devpost-ready text and required links
+- `docs/devpost-final-draft.md` - copy/paste Devpost final draft
 - `docs/validation-report.md` - current verification evidence
 - `docs/deck-outline.md` - presentation deck outline
 - `docs/repo-readiness.md` - public repository checklist
@@ -126,4 +127,12 @@ Generated local demo video:
 ```text
 C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-demo.mp4
 C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-narrated-demo.mp4
+```
+
+Public asset links:
+
+```text
+https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
+https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
+https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/SO-CASE-001-approved-evidence-report.json
 ```

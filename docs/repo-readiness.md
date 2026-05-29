@@ -29,6 +29,7 @@ swarmops-case-commander
 - `docs/architecture.md`
 - `docs/uipath-integration-contract.md`
 - `docs/submission-package.md`
+- `docs/devpost-final-draft.md`
 - `docs/validation-report.md`
 - `docs/deck-outline.md`
 - `deck/index.html`
@@ -36,6 +37,15 @@ swarmops-case-commander
 - `artifacts/swarmops-case-commander-deck.pdf`
 - `artifacts/SO-CASE-001-evidence-report.json`
 - `artifacts/SO-CASE-001-approved-evidence-report.json`
+- `artifacts/swarmops-case-commander-demo.mp4`
+- `artifacts/swarmops-case-commander-narrated-demo.mp4`
+
+## Public Asset Links
+
+- Code: https://github.com/D0ubl3-A/swarmops-case-commander
+- Narrated demo video file: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
+- Presentation deck PDF: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
+- Approved evidence JSON: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/SO-CASE-001-approved-evidence-report.json
 
 ## Commands
 

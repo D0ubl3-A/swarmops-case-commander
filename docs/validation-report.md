@@ -87,6 +87,14 @@ Observed output:
 C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-narrated-demo.mp4
 ```
 
+Public asset link checks:
+
+```text
+https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4 -> 200
+https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf -> 200
+https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/SO-CASE-001-approved-evidence-report.json -> 200
+```
+
 Evidence artifact generation:
 
 ```powershell
@@ -131,6 +139,7 @@ final_status=approved_for_handoff
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 | Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |
 | Narrated local demo video exists | `artifacts/swarmops-case-commander-narrated-demo.mp4` |
+| Public asset links resolve | Raw GitHub video, deck, and evidence links returned 200 |
 
 ## Remaining Validation Needed
 

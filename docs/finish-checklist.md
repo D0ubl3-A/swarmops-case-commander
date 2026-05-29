@@ -25,6 +25,9 @@
 - Demo video shot list exists.
 - Local proof demo video exists.
 - Narrated local demo video exists.
+- Public GitHub-hosted narrated demo file exists.
+- Public GitHub-hosted deck PDF exists.
+- Devpost final draft exists.
 
 ## Needs Account / External Access
 
@@ -36,10 +39,7 @@
 
 ## Needs Public Publishing
 
-- Upload or re-record narrated under-five-minute public demo video.
-- Upload public embeddable YouTube video.
-- Publish presentation deck link.
-- Add public deck link.
+- Upload public embeddable YouTube video if Devpost requires hosted video embed rather than a public MP4 link.
 - Fill Devpost submission.
 
 ## Final No-Fake-Claims Gate
@@ -49,6 +49,6 @@ Before final submission, confirm:
 - UiPath integration is real if claimed as implemented.
 - If UiPath integration remains partial, submission language says "integration plan/prototype" rather than "fully integrated."
 - Public repo is accessible.
-- Video is public and embeddable.
+- Video is public; if Devpost requires embedding, YouTube upload is still required.
 - Deck is accessible.
 - Demo video shows real prototype behavior.
