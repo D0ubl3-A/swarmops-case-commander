@@ -73,6 +73,7 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `prototype/swarmops_api.py` - local UiPath handoff API
 - `prototype/api_check.py` - API contract verifier
 - `submission/` - static judge-facing submission page
+- `.github/workflows/pages.yml` - GitHub Pages deployment workflow for the submission page
 - `LICENSE` - MIT license
 
 ## Run Local Prototype
@@ -123,6 +124,12 @@ Verify OpenAPI contract:
 
 ```powershell
 py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\openapi_check.py
+```
+
+Build and verify submission site:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\pages_build_check.py
 ```
 
 Verified screenshot:

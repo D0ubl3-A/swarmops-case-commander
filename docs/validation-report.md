@@ -162,6 +162,19 @@ swarmops submission page check passed
 links=5
 ```
 
+GitHub Pages build check:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\pages_build_check.py
+```
+
+Result:
+
+```text
+swarmops pages build check passed
+files=8
+```
+
 ## Requirements Covered
 
 | Requirement | Evidence |
@@ -181,6 +194,8 @@ links=5
 | OpenAPI contract passes | `prototype/openapi_check.py` |
 | Static submission page exists | `submission/index.html` |
 | Submission page check passes | `prototype/submission_page_check.py` |
+| Pages build workflow exists | `.github/workflows/pages.yml` |
+| Pages build check passes | `prototype/pages_build_check.py` |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 | Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |

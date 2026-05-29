@@ -32,6 +32,7 @@ UiPath, AgentHack, Maestro Case, AI agents, enterprise automation, agent governa
 
 - Code: https://github.com/D0ubl3-A/swarmops-case-commander
 - Submission page: `submission/index.html` in repo
+- GitHub Pages candidate: enable Pages from GitHub Actions, then use the generated page URL
 - Narrated demo MP4: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
 - Deck PDF: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 - OpenAPI contract: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/docs/openapi.json

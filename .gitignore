@@ -26,3 +26,4 @@ Thumbs.db
 *.mkv
 artifacts/video_frames/
 artifacts/*.wav
+dist/

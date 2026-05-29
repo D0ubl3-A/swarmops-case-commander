@@ -34,6 +34,8 @@
 - Devpost final draft exists.
 - Static judge-facing submission page exists.
 - YouTube and Devpost metadata pack exists.
+- GitHub Pages deployment workflow exists.
+- Submission site build check passes.
 
 ## Needs Account / External Access
 
@@ -46,6 +48,7 @@
 ## Needs Public Publishing
 
 - Upload public embeddable YouTube video if Devpost requires hosted video embed rather than a public MP4 link.
+- Enable GitHub Pages if a clean hosted submission page URL is preferred.
 - Fill Devpost submission.
 
 ## Final No-Fake-Claims Gate

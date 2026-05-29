@@ -29,6 +29,8 @@ swarmops-case-commander
 - `prototype/api_check.py`
 - `prototype/openapi_check.py`
 - `prototype/submission_page_check.py`
+- `prototype/build_submission_site.py`
+- `prototype/pages_build_check.py`
 - `data/sample-case.json`
 - `docs/architecture.md`
 - `docs/uipath-integration-contract.md`
@@ -41,6 +43,7 @@ swarmops-case-commander
 - `docs/youtube-devpost-metadata.md`
 - `submission/index.html`
 - `submission/submission.css`
+- `.github/workflows/pages.yml`
 - `deck/index.html`
 - `deck/slides.css`
 - `artifacts/swarmops-case-commander-deck.pdf`
@@ -81,7 +84,12 @@ py -3 prototype\generate_evidence.py
 py -3 prototype\api_check.py
 py -3 prototype\openapi_check.py
 py -3 prototype\submission_page_check.py
+py -3 prototype\pages_build_check.py
 ```
+
+## GitHub Pages
+
+The repo includes `.github/workflows/pages.yml`, which builds `dist/submission-site` from the curated submission page and artifacts. Enable GitHub Pages with GitHub Actions as the source, then run the workflow or push to `main`.
 
 ## Do Not Commit
 

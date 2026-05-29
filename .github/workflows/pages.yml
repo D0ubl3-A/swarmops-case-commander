@@ -1,0 +1,49 @@
+name: Deploy submission page
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "submission/**"
+      - "docs/openapi.json"
+      - "docs/uipath-maestro-build-guide.md"
+      - "artifacts/swarmops-case-commander-narrated-demo.mp4"
+      - "artifacts/swarmops-case-commander-deck.pdf"
+      - "artifacts/SO-CASE-001-approved-evidence-report.json"
+      - "prototype/build_submission_site.py"
+      - ".github/workflows/pages.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build submission site
+        run: python prototype/build_submission_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/submission-site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
