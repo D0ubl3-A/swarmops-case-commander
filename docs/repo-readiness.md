@@ -25,6 +25,8 @@ swarmops-case-commander
 - `prototype/smoke_check.py`
 - `prototype/interaction_check.py`
 - `prototype/generate_evidence.py`
+- `prototype/swarmops_api.py`
+- `prototype/api_check.py`
 - `data/sample-case.json`
 - `docs/architecture.md`
 - `docs/uipath-integration-contract.md`
@@ -69,6 +71,7 @@ gh repo create D0ubl3-A/swarmops-case-commander --public --source . --remote ori
 py -3 prototype\smoke_check.py
 py -3 prototype\interaction_check.py
 py -3 prototype\generate_evidence.py
+py -3 prototype\api_check.py
 ```
 
 ## Do Not Commit

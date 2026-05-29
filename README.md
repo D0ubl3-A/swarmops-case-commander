@@ -67,6 +67,8 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `docs/video-shot-list.md` - demo video shot plan
 - `data/sample-case.json` - seeded demo input and expected outputs
 - `prototype/` - runnable local prototype
+- `prototype/swarmops_api.py` - local UiPath handoff API
+- `prototype/api_check.py` - API contract verifier
 - `LICENSE` - MIT license
 
 ## Run Local Prototype
@@ -99,6 +101,18 @@ Check approval transition:
 
 ```powershell
 py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\interaction_check.py
+```
+
+Run UiPath handoff API:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\swarmops_api.py --port 8791
+```
+
+Verify API contract:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\api_check.py
 ```
 
 Verified screenshot:

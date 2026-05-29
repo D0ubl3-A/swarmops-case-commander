@@ -9,6 +9,8 @@
 - Human approval gate exists.
 - Pending evidence report can be generated.
 - Approved evidence report can be generated.
+- Local UiPath handoff API exists.
+- API contract check passes.
 - Smoke check passes.
 - Interaction check passes.
 - Screenshot proof exists.

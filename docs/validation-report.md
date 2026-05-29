@@ -122,6 +122,20 @@ approval=approved
 final_status=approved_for_handoff
 ```
 
+UiPath handoff API check:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\api_check.py
+```
+
+Result:
+
+```text
+swarmops api check passed
+handoff_status=pending_human_approval
+approval_status=approved
+```
+
 ## Requirements Covered
 
 | Requirement | Evidence |
@@ -135,6 +149,8 @@ final_status=approved_for_handoff
 | Export control exists | `Export evidence` button in UI and `exportReport` in app.js |
 | Evidence artifact can be generated without browser click | `prototype/generate_evidence.py` |
 | Human approval state transition is implemented | `prototype/interaction_check.py` and approved evidence artifact |
+| UiPath handoff API exists | `prototype/swarmops_api.py` |
+| UiPath handoff API contract passes | `prototype/api_check.py` |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 | Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |

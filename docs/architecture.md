@@ -31,8 +31,10 @@ flowchart LR
 - `prototype/index.html` renders the command center.
 - `prototype/app.js` owns the case state, approval transition, timeline status, and evidence export.
 - `prototype/styles.css` provides the operational dashboard layout.
+- `prototype/swarmops_api.py` exposes a local JSON API for UiPath Maestro Case handoff testing.
 - `data/sample-case.json` provides the seeded vendor onboarding case.
 - `prototype/smoke_check.py` verifies the structural requirements and seeded data.
+- `prototype/api_check.py` verifies the API contract, handoff payload, approval POST, and invalid-decision handling.
 
 ## State Model
 
@@ -79,6 +81,16 @@ The local prototype is intentionally small so the UiPath layer can become the or
 | Evidence JSON | Case artifact / audit attachment |
 | Final status | Case completion state |
 
+## Local API Surface
+
+| Endpoint | Purpose |
+| --- | --- |
+| `GET /health` | Service readiness check |
+| `GET /api/cases/SO-CASE-001` | Case data for Maestro Case setup |
+| `GET /api/cases/SO-CASE-001/handoff` | UiPath-ready handoff payload with risk flags and agent outputs |
+| `POST /api/cases/SO-CASE-001/approval` | Human task callback with `approved`, `rejected`, or `pending` |
+| `GET /api/cases/SO-CASE-001/evidence` | Audit-ready evidence report |
+
 ## Trust Boundary
 
 - Agents produce proposed outputs and evidence.
@@ -90,7 +102,7 @@ The local prototype is intentionally small so the UiPath layer can become the or
 
 1. Replace seeded JSON with a small local API.
 2. Add persistent case storage.
-3. Connect UiPath Maestro Case to call the SwarmOps evidence endpoint.
+3. Connect UiPath Maestro Case to call the SwarmOps handoff and evidence endpoints.
 4. Attach generated evidence JSON to the case.
 5. Record approval state transitions in UiPath.
 6. Package public repo, deck, and under-five-minute demo video.
