@@ -12,6 +12,7 @@ This release packages the verified local prototype and submission assets for UiP
 - Pending and approved evidence JSON.
 - Presentation deck PDF.
 - Narrated demo MP4.
+- Downloadable submission bundle zip.
 - Hosted GitHub Pages submission page.
 
 ## Public Links
@@ -22,6 +23,7 @@ This release packages the verified local prototype and submission assets for UiP
 - Deck PDF: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 - OpenAPI contract: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/docs/openapi.json
 - Approved evidence JSON: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/SO-CASE-001-approved-evidence-report.json
+- Submission bundle zip: https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip
 
 ## Verification Commands
 

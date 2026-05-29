@@ -19,6 +19,9 @@ https://d0ubl3-a.github.io/swarmops-case-commander/
 Versioned release:
 https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
 
+Submission bundle:
+https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip
+
 Deck:
 https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 
@@ -39,6 +42,7 @@ UiPath, AgentHack, Maestro Case, AI agents, enterprise automation, agent governa
 - Code: https://github.com/D0ubl3-A/swarmops-case-commander
 - Hosted submission page: https://d0ubl3-a.github.io/swarmops-case-commander/
 - Versioned release: https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
+- Submission bundle: https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip
 - Narrated demo MP4: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-narrated-demo.mp4
 - Deck PDF: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/artifacts/swarmops-case-commander-deck.pdf
 - OpenAPI contract: https://raw.githubusercontent.com/D0ubl3-A/swarmops-case-commander/main/docs/openapi.json

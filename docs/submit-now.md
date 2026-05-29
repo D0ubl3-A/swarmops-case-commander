@@ -34,6 +34,12 @@ Versioned release:
 https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0
 ```
 
+Submission bundle:
+
+```text
+https://github.com/D0ubl3-A/swarmops-case-commander/releases/download/v0.1.0/swarmops-case-commander-submission-bundle.zip
+```
+
 Demo video:
 
 ```text
