@@ -151,6 +151,12 @@ Verify final submit packet:
 py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\submit_packet_check.py
 ```
 
+Build and verify submission bundle:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\submission_bundle_check.py
+```
+
 Verified screenshot:
 
 ```text
@@ -177,6 +183,7 @@ Generated local demo video:
 ```text
 C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-demo.mp4
 C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-narrated-demo.mp4
+C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-submission-bundle.zip
 ```
 
 Public asset links:

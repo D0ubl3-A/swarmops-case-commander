@@ -39,6 +39,7 @@
 - Hosted GitHub Pages submission page is live.
 - Versioned GitHub release exists with key submission assets.
 - Final submit-now packet exists.
+- Local submission bundle zip exists.
 
 ## Needs Account / External Access
 

@@ -32,6 +32,8 @@ swarmops-case-commander
 - `prototype/build_submission_site.py`
 - `prototype/pages_build_check.py`
 - `prototype/submit_packet_check.py`
+- `prototype/build_submission_bundle.py`
+- `prototype/submission_bundle_check.py`
 - `data/sample-case.json`
 - `docs/architecture.md`
 - `docs/uipath-integration-contract.md`
@@ -88,6 +90,7 @@ py -3 prototype\openapi_check.py
 py -3 prototype\submission_page_check.py
 py -3 prototype\pages_build_check.py
 py -3 prototype\submit_packet_check.py
+py -3 prototype\submission_bundle_check.py
 ```
 
 ## GitHub Pages
