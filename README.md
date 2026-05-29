@@ -74,6 +74,7 @@ public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - `docs/openapi.json` - machine-readable local API contract
 - `docs/submission-package.md` - Devpost-ready text and required links
 - `docs/devpost-final-draft.md` - copy/paste Devpost final draft
+- `docs/submit-now.md` - final field-by-field submission packet
 - `docs/validation-report.md` - current verification evidence
 - `docs/deck-outline.md` - presentation deck outline
 - `docs/repo-readiness.md` - public repository checklist
@@ -142,6 +143,12 @@ Build and verify submission site:
 
 ```powershell
 py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\pages_build_check.py
+```
+
+Verify final submit packet:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\submit_packet_check.py
 ```
 
 Verified screenshot:

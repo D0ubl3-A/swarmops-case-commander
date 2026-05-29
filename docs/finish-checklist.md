@@ -38,6 +38,7 @@
 - Submission site build check passes.
 - Hosted GitHub Pages submission page is live.
 - Versioned GitHub release exists with key submission assets.
+- Final submit-now packet exists.
 
 ## Needs Account / External Access
 

@@ -175,6 +175,19 @@ swarmops pages build check passed
 files=8
 ```
 
+Submit packet check:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\submit_packet_check.py
+```
+
+Result:
+
+```text
+swarmops submit packet check passed
+required_items=9
+```
+
 Hosted submission page check:
 
 ```text
@@ -210,6 +223,8 @@ assets: openapi.json, SO-CASE-001-approved-evidence-report.json, swarmops-case-c
 | Submission page check passes | `prototype/submission_page_check.py` |
 | Pages build workflow exists | `.github/workflows/pages.yml` |
 | Pages build check passes | `prototype/pages_build_check.py` |
+| Submit packet exists | `docs/submit-now.md` |
+| Submit packet check passes | `prototype/submit_packet_check.py` |
 | Hosted submission page is live | `https://d0ubl3-a.github.io/swarmops-case-commander/` returned 200 |
 | Versioned release exists | `https://github.com/D0ubl3-A/swarmops-case-commander/releases/tag/v0.1.0` |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
