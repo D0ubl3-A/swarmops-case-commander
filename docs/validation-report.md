@@ -60,7 +60,7 @@ Public GitHub repo verification:
 https://github.com/D0ubl3-A/swarmops-case-commander
 visibility: public
 default_branch: main
-latest_commit: 75eec96 Add UiPath handoff API
+latest_commit: see current GitHub main branch
 ```
 
 Local proof demo video:
