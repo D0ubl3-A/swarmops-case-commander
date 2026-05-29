@@ -75,6 +75,18 @@ Observed output:
 C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-demo.mp4
 ```
 
+Narrated local demo video:
+
+```powershell
+py -3 C:\Users\aaron\.barz\apps\swarmops_case_commander\prototype\make_narrated_demo_video.py
+```
+
+Observed output:
+
+```text
+C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-narrated-demo.mp4
+```
+
 Evidence artifact generation:
 
 ```powershell
@@ -118,6 +130,7 @@ final_status=approved_for_handoff
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
 | Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 | Local proof demo video exists | `artifacts/swarmops-case-commander-demo.mp4` |
+| Narrated local demo video exists | `artifacts/swarmops-case-commander-narrated-demo.mp4` |
 
 ## Remaining Validation Needed
 

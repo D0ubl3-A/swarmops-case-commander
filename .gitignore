@@ -25,3 +25,4 @@ Thumbs.db
 *.mov
 *.mkv
 artifacts/video_frames/
+artifacts/*.wav

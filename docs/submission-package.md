@@ -53,6 +53,7 @@ Current state: local prototype is implemented and verified. UiPath Automation Cl
 
 - Public GitHub repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - Local proof demo video: `C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-demo.mp4`
+- Narrated upload candidate: `C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-narrated-demo.mp4`
 - Public YouTube demo video: pending
 - Presentation deck: pending
 - Local prototype path: `C:\Users\aaron\.barz\apps\swarmops_case_commander`
@@ -64,5 +65,5 @@ Current state: local prototype is implemented and verified. UiPath Automation Cl
 - Build or record Maestro Case flow.
 - Public repo is published with MIT license.
 - Create presentation deck.
-- Record narrated public demo video using the shot list in `docs/video-shot-list.md`.
+- Upload or re-record the narrated public demo video using `artifacts/swarmops-case-commander-narrated-demo.mp4` as the base.
 - Verify public links and judging access.
