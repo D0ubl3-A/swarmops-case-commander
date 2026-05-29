@@ -21,6 +21,7 @@
 - HTML presentation deck exists.
 - PDF presentation deck exists.
 - Repo readiness doc exists.
+- Public GitHub repo exists.
 
 ## Needs Account / External Access
 
@@ -32,8 +33,6 @@
 
 ## Needs Public Publishing
 
-- Initialize git repository.
-- Push public GitHub repo.
 - Record under-five-minute demo video.
 - Upload public embeddable YouTube video.
 - Publish presentation deck link.

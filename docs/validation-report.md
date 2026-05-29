@@ -54,6 +54,15 @@ Deck PDF:
 C:\Users\aaron\.barz\apps\swarmops_case_commander\artifacts\swarmops-case-commander-deck.pdf
 ```
 
+Public GitHub repo verification:
+
+```text
+https://github.com/D0ubl3-A/swarmops-case-commander
+visibility: public
+default_branch: main
+latest_commit: 24fe1b6 Build SwarmOps Case Commander prototype
+```
+
 Evidence artifact generation:
 
 ```powershell
@@ -95,6 +104,7 @@ final_status=approved_for_handoff
 | Evidence artifact can be generated without browser click | `prototype/generate_evidence.py` |
 | Human approval state transition is implemented | `prototype/interaction_check.py` and approved evidence artifact |
 | Presentation deck exists | `deck/index.html` and `artifacts/swarmops-case-commander-deck.pdf` |
+| Public repo exists | `https://github.com/D0ubl3-A/swarmops-case-commander` |
 
 ## Remaining Validation Needed
 

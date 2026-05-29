@@ -2,6 +2,12 @@
 
 SwarmOps Case Commander is a UiPath AgentHack project concept: a governed agent command center for exception-heavy business workflows.
 
+Public repository:
+
+```text
+https://github.com/D0ubl3-A/swarmops-case-commander
+```
+
 ## One-Liner
 
 A UiPath-governed case command center that turns messy vendor onboarding and purchase approval requests into staged agent work, human approval gates, and audit-ready evidence.
@@ -43,6 +49,7 @@ phase: local_prototype
 primary_target: UiPath AgentHack
 deadline: 2026-06-29 11:45 PM PDT
 next_action: attach UiPath Maestro Case flow after Labs access is confirmed
+public_repo: https://github.com/D0ubl3-A/swarmops-case-commander
 ```
 
 ## Project Files

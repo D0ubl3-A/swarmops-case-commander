@@ -51,7 +51,7 @@ Current state: local prototype is implemented and verified. UiPath Automation Cl
 
 ## Links To Include
 
-- Public GitHub repo: pending
+- Public GitHub repo: https://github.com/D0ubl3-A/swarmops-case-commander
 - Demo video: pending
 - Presentation deck: pending
 - Local prototype path: `C:\Users\aaron\.barz\apps\swarmops_case_commander`
@@ -61,7 +61,7 @@ Current state: local prototype is implemented and verified. UiPath Automation Cl
 
 - Confirm UiPath Labs / Automation Cloud access.
 - Build or record Maestro Case flow.
-- Publish repo with MIT license.
+- Public repo is published with MIT license.
 - Create presentation deck.
 - Record public demo video.
 - Verify public links and judging access.

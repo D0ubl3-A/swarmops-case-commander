@@ -2,7 +2,11 @@
 
 ## Current Public-Repo Status
 
-The project folder is ready to become a public repository, but it has not been initialized or pushed yet.
+Published:
+
+```text
+https://github.com/D0ubl3-A/swarmops-case-commander
+```
 
 Recommended repository name:
 
@@ -35,7 +39,7 @@ swarmops-case-commander
 
 ## Commands
 
-Initialize local repo:
+Local repo was initialized and pushed. If recreating from scratch:
 
 ```powershell
 git init
